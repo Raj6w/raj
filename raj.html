@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Streaming</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      margin: 0;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x500') no-repeat center/cover;
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: #fff;
+      animation: fadeIn 2s;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .movie-container {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .movie {
+      background-color: #282828;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: calc(33% - 40px);
+    }
+    .movie:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    .movie img {
+      width: 100%;
+      display: block;
+    }
+    .movie h2 {
+      margin: 10px;
+      font-size: 1.5rem;
+    }
+    .player-container {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .player {
+      width: 100%;
+      max-width: 800px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  <div class="movie-container">
+    <div class="movie">
+      <img src="C:\Users\Raj Computers\Pictures\download.JPEG" alt="Movie Poster">
+      <h2>Movie Title</h2>
+    </div>
+    <!-- Repeat .movie div for more movies -->
+  </div>
+  <div class="player-container">
+    <iframe class="player" src="C:\Users\Raj Computers\Downloads\videoplayback.mp4" allowfullscreen></iframe>
+  </div>
+   <div class="player-container">
+    <h2>Now Playing</h2>
+    <iframe class="player" src="C:\Users\Raj Computers\Downloads\videoplayback (1).mp4" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
+    <h2>Now Playing</h2>
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Movie Streaming</h1>
+  </header>
+  <div class="hero">
+    <h1>Enjoy Your Favorite Movies</h1>
+  </div>
